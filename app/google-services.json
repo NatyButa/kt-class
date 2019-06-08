@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "19416521945",
+    "firebase_url": "https://kotlin-581b6.firebaseio.com",
+    "project_id": "kotlin-581b6",
+    "storage_bucket": "kotlin-581b6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:19416521945:android:3e58ed47f657ad12",
+        "android_client_info": {
+          "package_name": "com.example.agenda_final"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "19416521945-vltqvdrvs8mmo0glbs48nop44l411mi6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsg7r26LhcyilVRcx4mlBVQQhDo088shs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "19416521945-vltqvdrvs8mmo0glbs48nop44l411mi6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
