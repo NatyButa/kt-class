@@ -22,12 +22,10 @@ class AgendaRepository(private val agendaDao: AgendaDao){
     fun deleteAgenda(agenda: Agenda){
         agendaDao.deleteAgenda(agenda)
 
+
+
     }
 
-//    fun updateAgena(agenda:Agenda){
-//        //to be done here
-//    }
-//    fun deleteAgenda()
 
 
 }
