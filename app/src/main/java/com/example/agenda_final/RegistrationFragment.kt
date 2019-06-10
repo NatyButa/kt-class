@@ -60,4 +60,4 @@ class RegistrationFragment : Fragment() {
 }
 
 
-}
+
