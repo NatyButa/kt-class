@@ -1,10 +1,7 @@
 package com.example.agenda_final.data
 
 import androidx.lifecycle.LiveData
-import androidx.room.Dao
-import androidx.room.Insert
-import androidx.room.OnConflictStrategy
-import androidx.room.Query
+import androidx.room.*
 import com.example.agenda_final.data.Agenda as Agenda
 
 
@@ -17,5 +14,11 @@ interface AgendaDao{
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     fun insertAgenda(agenda: Agenda):Long
+
+    @Update
+    fun updateAgenda(agenda:Agenda):Int
+
+    @Delete
+    fun deleteAgenda(ageda:Agenda):Int
 
 }
