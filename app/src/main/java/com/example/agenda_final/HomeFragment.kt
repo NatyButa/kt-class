@@ -46,6 +46,8 @@ class HomeFragment : Fragment() {
         }
         })
 
+        binding.model = agendaViewModel
+
 
         return myView
 
@@ -69,6 +71,8 @@ class HomeFragment : Fragment() {
             recylerView = recyler_agendas
             recylerView.layoutManager = LinearLayoutManager(activity)
             recylerView.adapter = AgendaAdapter(context)
+
+
 
 
 

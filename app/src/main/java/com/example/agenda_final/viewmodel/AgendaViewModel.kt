@@ -32,5 +32,15 @@ class AgendaViewModel(application: Application): AndroidViewModel(application){
 
     }
 
+    fun updateAgenda(agenda: Agenda) = viewModelScope.launch(Dispatchers.IO){
+        agendaRepository.updateAgenda(agenda)
+
+    }
+
+    fun deleteAgenda(agenda: Agenda) = viewModelScope.launch(Dispatchers.IO){
+        agendaRepository.deleteAgenda(agenda)
+
+    }
+
 
 }
