@@ -44,7 +44,7 @@
                 android:layout_toRightOf="@+id/icon_leading"
                 android:layout_alignParentTop="true"
                 android:text="Title Agend"
-                android:textSize="25sp" />
+                android:textSize="25sp" tools:ignore="UnknownId"/>
 
         <TextView
                 android:layout_width="wrap_content"
@@ -53,7 +53,7 @@
                 android:text="Created Date and schedule"
                 android:layout_toEndOf="@+id/icon_leading"
                 android:layout_toRightOf="@+id/icon_leading"
-                android:layout_below="@+id/item_title" />
+                android:layout_below="@+id/item_title" tools:ignore="UnknownId"/>
 
     </RelativeLayout>
 

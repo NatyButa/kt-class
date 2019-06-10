@@ -7,6 +7,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.databinding.DataBindingUtil
+import androidx.databinding.DataBindingUtil.inflate
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
@@ -27,21 +29,29 @@ class HomeFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,savedInstanceState: Bundle? ): View? {
 
 
+
+
+        var binding = inflate(inflater,R.layout.fragment_home, container, false)
+        var myView:View = binding.root
+
         val agendaAdapter = AgendaAdapter(activity!!)
-        agendaViewModel = ViewModelProviders.of(this).get(AgendaViewModel::class.java)
+        agendaViewModel = binding.ViewModelProviders.of(this).get(AgendaViewModel::class.java)
 //        agendaViewModel.insertAgenda(agenda)
         agendaViewModel.allAgenda.observe(this, Observer {
                 agenda -> agenda?.let {
-           agendaAdapter.setAgendas(agenda)
+            agendaAdapter.setAgendas(agenda)
 
 
 
         }
-})
+        })
+
+
+        return myView
 
 
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false)
+//        return inflater.inflate(R.layout.fragment_home, container, false)
     }
 
 
